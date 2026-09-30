@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.bayes/
+.bayes-test/
+.bayes-demo/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

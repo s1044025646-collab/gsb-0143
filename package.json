@@ -1,0 +1,21 @@
+{
+  "name": "discrete-bayes-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local discrete Bayesian network exact inference backend (TypeScript + Node.js + SQLite)",
+  "bin": {
+    "bayes": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test dist/test/inference.test.js dist/test/validation.test.js dist/test/persistence.test.js dist/test/api.test.js",
+    "demo": "tsc -p tsconfig.json && node dist/demo.js",
+    "start": "tsc -p tsconfig.json && node dist/cli.js serve",
+    "stop": "node dist/cli.js stop"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
