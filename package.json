@@ -1,0 +1,27 @@
+{
+  "name": "bayesnet",
+  "version": "1.0.0",
+  "description": "Local discrete Bayesian network exact inference backend (variable elimination) with TypeScript, Node.js and SQLite.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "bn": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --no-warnings dist/server.js",
+    "demo": "node --no-warnings scripts/demo.js",
+    "test": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand",
+    "clean": "node --no-warnings scripts/clean.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.10.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.0",
+    "typescript": "^5.6.0"
+  }
+}
